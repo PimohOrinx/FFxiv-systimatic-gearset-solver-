@@ -70,7 +70,7 @@ void Loadout::meld()// need checks for stat totals
     int V_Melded_Stats[5];
     for(int SsVI=0;SsVI<=VI_type[4]+VI_type_39[4]+VI_type_38[4]+VI_type_36[4]+VI_type_35[4];SsVI++)
     {
-        VI_Melded_Stats[4]=gearstats[4];
+        VI_Melded_Stats[4]=0;
         if(VI_type[4]>=SsVI)
             VI_Melded_Stats[4]+=SsVI*40;
         else if(VI_type[4]+VI_type_39[4]>=SsVI)
@@ -85,9 +85,11 @@ void Loadout::meld()// need checks for stat totals
             VI_Melded_Stats[4]+=VI_type[4]*40+VI_type_39[4]*39+VI_type_38[4]*38+VI_type_37[4]*37+VI_type_36[4]*36+(SsVI-VI_type[4]-VI_type_39[4]+VI_type_38[4]-VI_type_37[4]-VI_type_36[4])*35;
         else
             cout<<"Ss meld error\n";
+        
+        //is ss too >
         for(int TenVI=0;TenVI<=VI_type[3]+VI_type_39[3]+VI_type_38[3]+VI_type_36[3]+VI_type_35[3]-SsVI;TenVI++)
         {
-            VI_Melded_Stats[3]=gearstats[3];
+            VI_Melded_Stats[3]=0;
             if(VI_type[3]>=TenVI)
                 VI_Melded_Stats[3]+=TenVI*40;
             else if(VI_type[3]+VI_type_39[3]>=TenVI)
@@ -102,10 +104,10 @@ void Loadout::meld()// need checks for stat totals
                 VI_Melded_Stats[3]+=VI_type[3]*40+VI_type_39[3]*39+VI_type_38[3]*38+VI_type_37[3]*37+VI_type_36[3]*36+(TenVI-VI_type[3]-VI_type_39[3]+VI_type_38[3]-VI_type_37[3]-VI_type_36[3])*35;
             else
                 cout<<"Ten/piety meld error\n";
-            int CritVI_min=CritVI_min=max(VI_meld_limits[0][1]-(SsVI+TenVI),0);//deals with some issues where a gear set need 3 types of materia to acualy meld
+            int CritVI_min=max(VI_meld_limits[0][1]-(SsVI+TenVI),0);//deals with some issues where a gear set need 3 types of materia to acualy meld
             for(int CritVI=CritVI_min;CritVI<=VI_type[2]+VI_type_39[2]+VI_type_38[2]+VI_type_36[2]+VI_type_35[2]-SsVI-TenVI;CritVI++)
             {
-                VI_Melded_Stats[2]=gearstats[2];
+                VI_Melded_Stats[2]=0;
                 if(VI_type[2]>=CritVI)
                     VI_Melded_Stats[2]+=CritVI*40;
                 else if(VI_type[2]+VI_type_39[2]>=CritVI)
@@ -127,7 +129,7 @@ void Loadout::meld()// need checks for stat totals
                     int DHVI=VI_melds-DetVI-TenVI-CritVI-SsVI;
                     if(DHVI>=0 &&DHVI<=VI_type[1]+VI_type_39[1]+VI_type_38[1]+VI_type_36[1]+VI_type_35[1])
                     {
-                        VI_Melded_Stats[0]=gearstats[0];
+                        VI_Melded_Stats[0]=0;
                         if(VI_type[0]>=DetVI)
                             VI_Melded_Stats[0]+=DetVI*40;
                         else if(VI_type[0]+VI_type_39[0]>=DetVI)
@@ -143,7 +145,7 @@ void Loadout::meld()// need checks for stat totals
                         else
                             cout<<"Det meld error\n";
                         
-                        VI_Melded_Stats[1]=gearstats[1];
+                        VI_Melded_Stats[1]=0;
                         if(VI_type[1]>=DHVI)
                             VI_Melded_Stats[1]+=DHVI*40;
                         else if(VI_type[1]+VI_type_39[1]>=DHVI)
@@ -159,23 +161,91 @@ void Loadout::meld()// need checks for stat totals
                         else
                             cout<<"DH meld error\n";
                         
+                        
+                        
                         if(DHVI<=(VI_type[1]+VI_type_39[1]+VI_type_38[1]+VI_type_36[1]+VI_type_35[1])&&VI_melds==DHVI+DetVI+TenVI+CritVI+SsVI)
                         {
-                            for(int DetV=0;DetV<=V_type[0]+V_type_11[0]+V_type_10[0]+V_type_9[0];DetV++)
+                            for(int SsV=0;SsV<=V_type[4]+V_type_11[4]+V_type_10[4]+V_type_9[4];SsV++)
                             {
-                                for(int TenV=0;TenV<=V_type[3]+V_type_11[3]+V_type_10[3]+V_type_9[3]-DetV;TenV++)
+                                V_Melded_Stats[4]=0;
+                                if(V_type[4]>=SsV)
+                                    V_Melded_Stats[4]+=SsV*12;
+                                else if(V_type[4]+V_type_11[4]>=SsV)
+                                    V_Melded_Stats[4]+=V_type[4]*12+(SsV-V_type[4])*11;
+                                else if(V_type[4]+V_type_11[4]+V_type_10[4]>=SsV)
+                                    V_Melded_Stats[4]+=V_type[4]*12+V_type_11[4]*11+(SsV-V_type[4]-V_type_11[4])*10;
+                                else if(V_type[4]+V_type_11[4]+V_type_10[4]+V_type_9[4]>=SsV)
+                                    V_Melded_Stats[4]+=V_type[4]*12+V_type_11[4]*11+V_type_10[4]*10+(SsV-V_type[4]-V_type_11[4]+V_type_10[4])*9;
+                                else
+                                    cout<<"SsV meld error\n";
+                                //check ss
+                                for(int TenV=0;TenV<=V_type[3]+V_type_11[3]+V_type_10[3]+V_type_9[3]-SsV;TenV++)
                                 {
-                                    for(int CritV=0;CritV<=V_type[2]+V_type_11[2]+V_type_10[2]+V_type_9[2]-DetV-TenV;CritV++)
+                                    V_Melded_Stats[3]=0;
+                                    if(V_type[3]>=TenV)
+                                        V_Melded_Stats[3]+=TenV*12;
+                                    else if(V_type[3]+V_type_11[3]>=TenV)
+                                        V_Melded_Stats[3]+=V_type[3]*12+(TenV-V_type[3])*11;
+                                    else if(V_type[3]+V_type_11[3]+V_type_10[3]>=TenV)
+                                        V_Melded_Stats[3]+=V_type[3]*12+V_type_11[3]*11+(TenV-V_type[3]-V_type_11[3])*10;
+                                    else if(V_type[3]+V_type_11[3]+V_type_10[3]+V_type_9[3]>=TenV)
+                                        V_Melded_Stats[3]+=V_type[3]*12+V_type_11[3]*11+V_type_10[3]*10+(TenV-V_type[3]-V_type_11[3]+V_type_10[3])*9;
+                                    else
+                                        cout<<"TenV meld error\n";
+                                    //check pie
+                                    int CritV_min=max(V_meld_limits[0][1]-(SsV+TenV),0);//to avoid issues with lack of meld options
+                                    for(int CritV=CritV_min;CritV<=V_type[2]+V_type_11[2]+V_type_10[2]+V_type_9[2]-SsV-TenV;CritV++)
                                     {
-                                        for(int SsV=0;CritV<=V_type[4]+V_type_11[4]+V_type_10[4]+V_type_9[4]-DetV-TenV-CritV;SsV++)
+                                        V_Melded_Stats[2]=0;
+                                        if(V_type[2]>=CritV)
+                                            V_Melded_Stats[2]+=CritV*12;
+                                        else if(V_type[2]+V_type_11[2]>=CritV)
+                                            V_Melded_Stats[2]+=V_type[2]*12+(CritV-V_type[2])*11;
+                                        else if(V_type[2]+V_type_11[2]+V_type_10[2]>=CritV)
+                                            V_Melded_Stats[2]+=V_type[2]*12+V_type_11[2]*11+(CritV-V_type[2]-V_type_11[2])*10;
+                                        else if(V_type[2]+V_type_11[2]+V_type_10[2]+V_type_9[2]>=CritV)
+                                            V_Melded_Stats[2]+=V_type[2]*12+V_type_11[2]*11+V_type_10[2]*10+(CritV-V_type[2]-V_type_11[2]+V_type_10[2])*9;
+                                        else
+                                            cout<<"CritV meld error\n";
+                                        
+                                        int DetV_Min=max((V_meld_limits[1][1]-SsV-TenV-CritV),0);//wierd meld fix
+                                        for(int DetV=DetV_Min;DetV<=V_type[0]+V_type_11[0]+V_type_10[0]+V_type_9[0]-SsV-TenV-CritV;DetV++)
                                         {
                                             int DHV=V_melds-DetV-TenV-CritV-SsV;
                                             if(DHV<=(V_type[1]+V_type_11[1]+V_type_10[1]+V_type_9[1])&&V_melds==DHV+DetV+TenV+CritV+SsV)
                                             {//find stat total
                                                 
+                                                V_Melded_Stats[0]=0;
+                                                if(V_type[0]>=DetV)
+                                                    V_Melded_Stats[0]+=DetV*12;
+                                                else if(V_type[0]+V_type_11[0]>=DetV)
+                                                    V_Melded_Stats[0]+=V_type[0]*12+(DetV-V_type[0])*11;
+                                                else if(V_type[0]+V_type_11[0]+V_type_10[0]>=DetV)
+                                                    V_Melded_Stats[0]+=V_type[0]*12+V_type_11[0]*11+(DetV-V_type[0]-V_type_11[0])*10;
+                                                else if(V_type[0]+V_type_11[0]+V_type_10[0]+V_type_9[0]>=DetV)
+                                                    V_Melded_Stats[0]+=V_type[0]*12+V_type_11[0]*11+V_type_10[0]*10+(DetV-V_type[0]-V_type_11[0]+V_type_10[0])*9;
+                                                else
+                                                    cout<<"DetV meld error\n";
+                                                
+                                                V_Melded_Stats[1]=0;
+                                                if(V_type[1]>=DHV)
+                                                    V_Melded_Stats[1]+=DHV*12;
+                                                else if(V_type[1]+V_type_11[1]>=DHV)
+                                                    V_Melded_Stats[1]+=V_type[1]*12+(DHV-V_type[1])*11;
+                                                else if(V_type[1]+V_type_11[1]+V_type_10[1]>=DHV)
+                                                    V_Melded_Stats[1]+=V_type[1]*12+V_type_11[1]*11+(DHV-V_type[1]-V_type_11[1])*10;
+                                                else if(V_type[1]+V_type_11[1]+V_type_10[1]+V_type_9[1]>=DHV)
+                                                    V_Melded_Stats[1]+=V_type[1]*12+V_type_11[1]*11+V_type_10[1]*10+(DHV-V_type[1]-V_type_11[1]+V_type_10[1])*9;
+                                                else
+                                                    cout<<"DHV meld error\n";
+                                               
+                                                cout<<"at endmeld\n";
+                                                
+                                                //food
+                                                //rank damage and save;
+                                                
                                             }
-                                            //food
-                                            //rank damage and save;
+                                            
                                         }
                                     }
                                 }

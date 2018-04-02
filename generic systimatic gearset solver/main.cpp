@@ -51,7 +51,7 @@ int main(int argc, const char * argv[]) {
         gear.importgear(job, "CraftedGear.csv");
     
     //make gearsets
-    gear.solve();
+    gear.solve(brd_in_party,sch_in_party,drg_in_party);
     //
     
     //read setup stuff eve

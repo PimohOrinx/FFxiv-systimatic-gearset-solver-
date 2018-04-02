@@ -12,12 +12,13 @@
 #include <fstream>
 #include "math.h"
 #include "Gearset.hpp"
+#include "loadout.hpp"
 #include "gear.hpp"
 using namespace std;
 
 void Gearset::importgear(int job, string file)
 {
-    
+    Job=job;
     string line;
     ifstream ImportGear (file);
     if (ImportGear.is_open())
@@ -27,7 +28,7 @@ void Gearset::importgear(int job, string file)
         {
             gear tempgear;//det,crit,ss,pie,dh
             tempgear.gearimport(line);
-            if(tempgear.gearjob(job))//checks to see if the gear is for the correct job
+            if(tempgear.gearjob(Job))//checks to see if the gear is for the correct job
             {
                 if (tempgear.gearslot()==3)
                     head.push_back(tempgear);
@@ -59,8 +60,15 @@ void Gearset::importgear(int job, string file)
     }
 };
 
-void Gearset::solve()
+void Gearset::solve(int brd,int sch, int drg)
 {
+    if(Job!=0)
+    {
+        gear tempgear;//gives non pld a none sheild
+        tempgear.gearimport("no shield,n/a,-1,MNK WAR DRG BRD WHM BLM SMN SCH NIN MCH DRK AST SAM RDM,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0");
+        sheild.push_back(tempgear);
+    }
+    
     //ugly nested for loops to itterate though all gear combos
     for(vector<gear>::iterator it_ring1=ring.begin();it_ring1!=ring.end();it_ring1++)
     {
@@ -89,11 +97,17 @@ void Gearset::solve()
                                                     for(vector<gear>::iterator it_arm=arm.begin();it_arm!=arm.end();it_arm++)
                                                     {
                                                         //meld this shit
-                                                        this->Meld();
+                                                        
                                                         //some progress stuff
                                                         //if pld
                                                         for(vector<gear>::iterator it_sheild=sheild.begin();it_sheild!=sheild.end();it_sheild++)
                                                         {
+                                                            Loadout tempload;
+                                                            tempload.Addgear(Job, *it_ring1, *it_ring2, *it_head, *it_body, *it_hands, *it_waist, *it_legs, *it_feet, *it_ear, *it_neck, *it_brace, *it_arm, *it_sheild);
+                                                            //some way of saving good results
+                                                            int damage=tempload.unmelded_damage(brd,sch,drg);
+                                                            //if new damage is close to old damage, 10% atm
+                                                            tempload.meld();
                                                             
                                                         }
                                                     }
@@ -116,14 +130,4 @@ void Gearset::stat_totals()
     
 };
 
-void Gearset::Meld()
-{
-    int V_left;
-    int VI_left;
-    int tempmelds[2][5]={{0,0,0,0,0},{0,0,0,0,0}};
-    for(int itDet=0;itDet<368;itDet++)//det,crit,ss,pie,dh
-    {
-        //V_left=V_melds;
-        //VI_left=VI_melds;
-    }
-};
+

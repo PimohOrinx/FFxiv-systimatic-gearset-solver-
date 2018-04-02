@@ -29,11 +29,11 @@ private:
     vector<gear> ring;
     vector<gear> arm;
     vector<gear> sheild;
-    void Meld();
     void stat_totals();
+    int Job;
 public:
     void importgear(int job, string file);
-    void solve();
+    void solve(int brd,int sch, int drg);
     
     
 };
