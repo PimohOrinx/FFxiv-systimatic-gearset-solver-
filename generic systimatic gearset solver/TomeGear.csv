@@ -1,0 +1,83 @@
+name,jp name,id number,job,slot,Unique,VI melds,V melds,ilvl,pWD,mWD,main stat,Meld cap,Determination,Critical Hit,Skill Speed,Spell Speed,Piety,Tenacity,Direct Hit Rate
+ryumyaku ring of slaying,龍脈指輪【闘士】,21395,PGL LNC MNK DRG SAM,12,1,1,0,360,0,0,142,128,128,0,90,0,0,0,0
+ryumyaku ring of aiming,龍脈指輪【弓士】,21396,ARC ROG BRD NIN MCH,12,1,1,0,360,0,0,142,128,0,128,90,0,0,0,0
+ryumyaku ring of healing,龍脈指輪【学士】,21397,CNJ WHM SCH AST,12,1,1,0,360,0,0,142,128,128,0,0,0,90,0,0
+ryumyaku ring of casting,龍脈指輪【術士】,21398,THM ACN BLM SMN RDM,12,1,1,0,360,0,0,142,128,0,90,0,0,0,0,128
+Homura Kai,焔【改】,21399,GLA PLD,1,1,2,0,370,104,70,248,222,0,222,0,0,0,156,0
+pair of Jikki Kai,実基【改】,21400,PGL MNK,13,1,2,0,370,104,70,347,311,0,218,0,0,0,0,311
+Mikazuki Kai,三日月【改】,21401,MRD WAR,13,1,2,0,370,104,70,347,311,0,0,218,0,0,311,0
+Otegine Kai,御手杵【改】,21402,LNC DRG,13,1,2,0,370,104,70,347,311,311,0,218,0,0,0,0
+Kujakuo Kai,孔雀王【改】,21403,ARC BRD,13,1,2,0,370,104,70,347,311,0,218,0,0,0,0,311
+pair of Niokiyotsuna Kai,二王清綱【改】,21404,ROG NIN,13,1,2,0,370,104,70,347,311,218,0,0,0,0,0,311
+Odenta Kai,大伝多【改】,21405,DRK,13,1,2,0,370,104,70,347,311,311,0,0,0,0,218,0
+Ikkansai Kai,一貫斎【改】,21406,MCH,13,1,2,0,370,104,70,347,311,0,218,311,0,0,0,0
+Byakurenge Kai,白蓮華【改】,21407,CNJ WHM,13,1,2,0,370,104,140,347,311,311,218,0,0,0,0,0
+Makibi Kai,真備【改】,21408,THM BLM,13,1,2,0,370,104,140,347,311,218,0,0,0,0,0,311
+copy of <Emphasis>Kinyoshu</Emphasis> Kai,金葉集【改】,21409,ACN SMN,13,1,2,0,370,104,140,347,311,0,0,0,311,0,0,218
+copy of <Emphasis>Koyoshu</Emphasis> Kai,紅葉集【改】,21410,SCH,13,1,2,0,370,104,140,347,311,0,0,0,311,218,0,0
+Kontengi Kai,渾天儀【改】,21411,AST,13,1,2,0,370,104,140,347,311,0,0,0,218,311,0,0
+Kanesada Kai,兼定【改】,21412,SAM,13,1,2,0,370,104,70,347,311,0,311,0,0,0,0,218
+Shishio Kai,獅子王【改】,21413,RDM,13,1,2,0,370,104,140,347,311,0,0,0,311,0,0,218
+Mitsuba Kai,三葉【改】,21414,GLA PLD,2,1,0,0,370,0,0,99,89,0,89,0,0,0,62,0
+dai-ryumyaku hachigane of fending,大龍脈鉢金【武士】,21415,GLA MRD PLD WAR DRK,3,1,2,0,370,0,0,198,178,178,0,125,0,0,0,0
+dai-ryumyaku jufuku of fending,大龍脈戎服【武士】,21416,GLA MRD PLD WAR DRK,4,1,2,0,370,0,0,322,289,202,289,0,0,0,0,0
+pair of dai-ryumyaku kote of fending,大龍脈籠手【武士】,21417,GLA MRD PLD WAR DRK,5,1,2,0,370,0,0,198,178,0,0,125,0,0,178,0
+dai-ryumyaku jui of fending,大龍脈戎衣【武士】,21418,GLA MRD PLD WAR DRK,7,1,2,0,370,0,0,322,289,0,202,289,0,0,0,0
+pair of dai-ryumyaku sune-ate of fending,大龍脈脛当【武士】,21419,GLA MRD PLD WAR DRK,8,1,2,0,370,0,0,198,178,178,125,0,0,0,0,0
+dai-ryumyaku obi of fending,大龍脈帯【武士】,21420,GLA MRD PLD WAR DRK,6,1,1,0,370,0,0,149,133,0,0,93,0,0,133,0
+dai-ryumyaku hachigane of maiming,大龍脈鉢金【槍士】,21421,LNC DRG,3,1,2,0,370,0,0,198,178,178,0,0,0,0,0,125
+dai-ryumyaku jufuku of maiming,大龍脈戎服【槍士】,21422,LNC DRG,4,1,2,0,370,0,0,322,289,0,289,0,0,0,0,202
+pair of dai-ryumyaku kote of maiming,大龍脈籠手【槍士】,21423,LNC DRG,5,1,2,0,370,0,0,198,178,0,0,125,0,0,0,178
+dai-ryumyaku tsutsu-hakama of maiming,大龍脈筒袴【槍士】,21424,LNC DRG,7,1,2,0,370,0,0,322,289,0,202,289,0,0,0,0
+pair of dai-ryumyaku sune-ate of maiming,大龍脈脛当【槍士】,21425,LNC DRG,8,1,2,0,370,0,0,198,178,125,0,178,0,0,0,0
+dai-ryumyaku obi of maiming,大龍脈帯【槍士】,21426,LNC DRG,6,1,1,0,370,0,0,149,133,133,0,93,0,0,0,0
+dai-ryumyaku hachigane of striking,大龍脈鉢金【拳士】,21427,PGL MNK SAM,3,1,2,0,370,0,0,198,178,0,0,125,0,0,0,178
+dai-ryumyaku togi of striking,大龍脈闘着【拳士】,21428,PGL MNK SAM,4,1,2,0,370,0,0,322,289,202,0,289,0,0,0,0
+pair of dai-ryumyaku kote of striking,大龍脈籠手【拳士】,21429,PGL MNK SAM,5,1,2,0,370,0,0,198,178,178,0,125,0,0,0,0
+dai-ryumyaku tsutsu-hakama of striking,大龍脈筒袴【拳士】,21430,PGL MNK SAM,7,1,2,0,370,0,0,322,289,202,289,0,0,0,0,0
+pair of dai-ryumyaku sune-ate of striking,大龍脈脛当【拳士】,21431,PGL MNK SAM,8,1,2,0,370,0,0,198,178,0,0,178,0,0,0,125
+dai-ryumyaku obi of striking,大龍脈帯【拳士】,21432,PGL MNK SAM,6,1,1,0,370,0,0,149,133,0,133,0,0,0,0,93
+dai-ryumyaku hachigane of aiming,大龍脈鉢金【弓士】,21433,ARC BRD MCH,3,1,2,0,370,0,0,198,178,178,0,0,0,0,0,125
+dai-ryumyaku jufuku of aiming,大龍脈戎服【弓士】,21434,ARC BRD MCH,4,1,2,0,370,0,0,322,289,202,0,289,0,0,0,0
+pair of dai-ryumyaku kote of aiming,大龍脈籠手【弓士】,21435,ARC BRD MCH,5,1,2,0,370,0,0,198,178,125,178,0,0,0,0,0
+dai-ryumyaku jui of aiming,大龍脈戎衣【弓士】,21436,ARC BRD MCH,7,1,2,0,370,0,0,322,289,0,202,0,0,0,0,289
+pair of dai-ryumyaku sune-ate of aiming,大龍脈脛当【弓士】,21437,ARC BRD MCH,8,1,2,0,370,0,0,198,178,0,178,125,0,0,0,0
+dai-ryumyaku obi of aiming,大龍脈帯【弓士】,21438,ARC BRD MCH,6,1,1,0,370,0,0,149,133,0,93,133,0,0,0,0
+dai-ryumyaku hachigane of scouting,大龍脈鉢金【間士】,21439,ROG NIN,3,1,2,0,370,0,0,198,178,0,0,178,0,0,0,125
+dai-ryumyaku togi of scouting,大龍脈闘着【間士】,21440,ROG NIN,4,1,2,0,370,0,0,322,289,202,289,0,0,0,0,0
+pair of dai-ryumyaku kote of scouting,大龍脈籠手【間士】,21441,ROG NIN,5,1,2,0,370,0,0,198,178,0,125,0,0,0,0,178
+dai-ryumyaku tsutsu-hakama of scouting,大龍脈筒袴【間士】,21442,ROG NIN,7,1,2,0,370,0,0,322,289,202,0,289,0,0,0,0
+pair of dai-ryumyaku sune-ate of scouting,大龍脈脛当【間士】,21443,ROG NIN,8,1,2,0,370,0,0,198,178,178,0,0,0,0,0,125
+dai-ryumyaku obi of scouting,大龍脈帯【間士】,21444,ROG NIN,6,1,1,0,370,0,0,149,133,0,93,133,0,0,0,0
+dai-ryumyaku hitai-ate of healing,大龍脈額当【学士】,21445,CNJ WHM SCH AST,3,1,2,0,370,0,0,198,178,125,178,0,0,0,0,0
+dai-ryumyaku dogi of healing,大龍脈道着【学士】,21446,CNJ WHM SCH AST,4,1,2,0,370,0,0,322,289,289,0,0,0,202,0,0
+pair of dai-ryumyaku kote of healing,大龍脈手甲【学士】,21447,CNJ WHM SCH AST,5,1,2,0,370,0,0,198,178,0,125,0,0,178,0,0
+dai-ryumyaku tsutsu-hakama of healing,大龍脈筒袴【学士】,21448,CNJ WHM SCH AST,7,1,2,0,370,0,0,322,289,202,0,0,289,0,0,0
+pair of dai-ryumyaku choka of healing,大龍脈長靴【学士】,21449,CNJ WHM SCH AST,8,1,2,0,370,0,0,198,178,0,178,0,0,125,0,0
+dai-ryumyaku obi of healing,大龍脈帯【学士】,21450,CNJ WHM SCH AST,6,1,1,0,370,0,0,149,133,0,133,0,93,0,0,0
+dai-ryumyaku seibo of casting,大龍脈制帽【術士】,21451,THM ACN BLM SMN RDM,3,1,2,0,370,0,0,198,178,0,0,0,178,0,0,125
+dai-ryumyaku dogi of casting,大龍脈道着【術士】,21452,THM ACN BLM SMN RDM,4,1,2,0,370,0,0,322,289,289,0,0,202,0,0,0
+pair of dai-ryumyaku kote of casting,大龍脈手甲【術士】,21453,THM ACN BLM SMN RDM,5,1,2,0,370,0,0,198,178,125,178,0,0,0,0,0
+dai-ryumyaku tsutsu-hakama of casting,大龍脈筒袴【術士】,21454,THM ACN BLM SMN RDM,7,1,2,0,370,0,0,322,289,0,202,0,0,0,0,289
+pair of dai-ryumyaku choka of casting,大龍脈長靴【術士】,21455,THM ACN BLM SMN RDM,8,1,2,0,370,0,0,198,178,178,0,0,0,0,0,125
+dai-ryumyaku obi of casting,大龍脈帯【術士】,21456,THM ACN BLM SMN RDM,6,1,1,0,370,0,0,149,133,133,0,0,0,0,0,93
+dai-ryumyaku earring of fending,大龍脈耳飾【武士】,21457,GLA MRD PLD WAR DRK,9,1,1,0,370,0,0,44,133,0,133,93,0,0,0,0
+dai-ryumyaku earring of slaying,大龍脈耳飾【闘士】,21458,PGL LNC MNK DRG SAM,9,1,1,0,370,0,0,149,133,93,133,0,0,0,0,0
+dai-ryumyaku earring of aiming,大龍脈耳飾【弓士】,21459,ARC ROG BRD NIN MCH,9,1,1,0,370,0,0,149,133,0,133,93,0,0,0,0
+dai-ryumyaku earring of healing,大龍脈耳飾【学士】,21460,CNJ WHM SCH AST,9,1,1,0,370,0,0,149,133,0,93,0,133,0,0,0
+dai-ryumyaku earring of casting,大龍脈耳飾【術士】,21461,THM ACN BLM SMN RDM,9,1,1,0,370,0,0,149,133,0,133,0,93,0,0,0
+dai-ryumyaku necklace of fending,大龍脈首飾【武士】,21462,GLA MRD PLD WAR DRK,10,1,1,0,370,0,0,44,133,133,93,0,0,0,0,0
+dai-ryumyaku necklace of slaying,大龍脈首飾【闘士】,21463,PGL LNC MNK DRG SAM,10,1,1,0,370,0,0,149,133,133,93,0,0,0,0,0
+dai-ryumyaku necklace of aiming,大龍脈首飾【弓士】,21464,ARC ROG BRD NIN MCH,10,1,1,0,370,0,0,149,133,0,0,133,0,0,0,93
+dai-ryumyaku necklace of healing,大龍脈首飾【学士】,21465,CNJ WHM SCH AST,10,1,1,0,370,0,0,149,133,93,133,0,0,0,0,0
+dai-ryumyaku necklace of casting,大龍脈首飾【術士】,21466,THM ACN BLM SMN RDM,10,1,1,0,370,0,0,149,133,133,0,0,0,0,0,93
+dai-ryumyaku bracelet of fending,大龍脈数珠【武士】,21467,GLA MRD PLD WAR DRK,11,1,1,0,370,0,0,44,133,0,0,133,0,0,93,0
+dai-ryumyaku bracelet of slaying,大龍脈数珠【闘士】,21468,PGL LNC MNK DRG SAM,11,1,1,0,370,0,0,149,133,0,93,133,0,0,0,0
+dai-ryumyaku bracelet of aiming,大龍脈数珠【弓士】,21469,ARC ROG BRD NIN MCH,11,1,1,0,370,0,0,149,133,133,0,0,0,0,0,93
+dai-ryumyaku bracelet of healing,大龍脈数珠【学士】,21470,CNJ WHM SCH AST,11,1,1,0,370,0,0,149,133,0,0,0,93,133,0,0
+dai-ryumyaku bracelet of casting,大龍脈数珠【術士】,21471,THM ACN BLM SMN RDM,11,1,1,0,370,0,0,149,133,0,93,0,133,0,0,0
+dai-ryumyaku ring of fending,大龍脈指輪【武士】,21472,GLA MRD PLD WAR DRK,12,1,1,0,370,0,0,44,133,93,0,133,0,0,0,0
+dai-ryumyaku ring of slaying,大龍脈指輪【闘士】,21473,PGL LNC MNK DRG SAM,12,1,1,0,370,0,0,149,133,133,0,93,0,0,0,0
+dai-ryumyaku ring of aiming,大龍脈指輪【弓士】,21474,ARC ROG BRD NIN MCH,12,1,1,0,370,0,0,149,133,0,133,93,0,0,0,0
+dai-ryumyaku ring of healing,大龍脈指輪【学士】,21475,CNJ WHM SCH AST,12,1,1,0,370,0,0,149,133,133,0,0,0,93,0,0
+dai-ryumyaku ring of casting,大龍脈指輪【術士】,21476,THM ACN BLM SMN RDM,12,1,1,0,370,0,0,149,133,0,93,0,0,0,0,133

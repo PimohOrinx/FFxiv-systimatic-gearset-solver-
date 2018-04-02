@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EF4A88AE206B222B00B7A03F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF4A88AD206B222B00B7A03F /* main.cpp */; };
+		EF4A88B7206BFAEA00B7A03F /* Gearset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF4A88B5206BFAEA00B7A03F /* Gearset.cpp */; };
+		EF4A88BA206BFEB000B7A03F /* gear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF4A88B8206BFEB000B7A03F /* gear.cpp */; };
+		EF4A88BD206D818A00B7A03F /* Loadout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF4A88BB206D818A00B7A03F /* Loadout.cpp */; };
+		EF4A88C020717AB600B7A03F /* Damage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF4A88BE20717AB600B7A03F /* Damage.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		EF4A88AA206B222B00B7A03F /* generic systimatic gearset solver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "generic systimatic gearset solver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4A88AD206B222B00B7A03F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EF4A88B5206BFAEA00B7A03F /* Gearset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gearset.cpp; sourceTree = "<group>"; };
+		EF4A88B6206BFAEA00B7A03F /* Gearset.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Gearset.hpp; sourceTree = "<group>"; };
+		EF4A88B8206BFEB000B7A03F /* gear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gear.cpp; sourceTree = "<group>"; };
+		EF4A88B9206BFEB000B7A03F /* gear.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gear.hpp; sourceTree = "<group>"; };
+		EF4A88BB206D818A00B7A03F /* Loadout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Loadout.cpp; sourceTree = "<group>"; };
+		EF4A88BC206D818A00B7A03F /* Loadout.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Loadout.hpp; sourceTree = "<group>"; };
+		EF4A88BE20717AB600B7A03F /* Damage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Damage.cpp; sourceTree = "<group>"; };
+		EF4A88BF20717AB600B7A03F /* Damage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Damage.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				EF4A88AD206B222B00B7A03F /* main.cpp */,
+				EF4A88B5206BFAEA00B7A03F /* Gearset.cpp */,
+				EF4A88B6206BFAEA00B7A03F /* Gearset.hpp */,
+				EF4A88B8206BFEB000B7A03F /* gear.cpp */,
+				EF4A88B9206BFEB000B7A03F /* gear.hpp */,
+				EF4A88BB206D818A00B7A03F /* Loadout.cpp */,
+				EF4A88BC206D818A00B7A03F /* Loadout.hpp */,
+				EF4A88BE20717AB600B7A03F /* Damage.cpp */,
+				EF4A88BF20717AB600B7A03F /* Damage.hpp */,
 			);
 			path = "generic systimatic gearset solver";
 			sourceTree = "<group>";
@@ -118,7 +138,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4A88BD206D818A00B7A03F /* Loadout.cpp in Sources */,
 				EF4A88AE206B222B00B7A03F /* main.cpp in Sources */,
+				EF4A88C020717AB600B7A03F /* Damage.cpp in Sources */,
+				EF4A88B7206BFAEA00B7A03F /* Gearset.cpp in Sources */,
+				EF4A88BA206BFEB000B7A03F /* gear.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

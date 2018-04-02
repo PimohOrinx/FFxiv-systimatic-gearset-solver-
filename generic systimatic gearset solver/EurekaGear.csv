@@ -1,0 +1,92 @@
+name,jp name,id number,job,slot,Unique,VI melds,V melds,ilvl,pWD,mWD,main stat,Meld cap,Determination,Critical Hit,Skill Speed,Spell Speed,Piety,Tenacity,Direct Hit Rate
+Galatyn Anemos,ガラティン・アネモス,21990,PLD,1,1,5,0,355,101,69,231,209,146,0,0,0,0,209,0
+pair of Sudarshana Chakras Anemos,スダルシャナ・アネモス,21991,MNK,13,1,5,0,355,101,69,323,292,204,0,292,0,0,0,0
+Farsha Anemos,ファルシャ・アネモス,21992,WAR,13,1,5,0,355,101,69,323,292,0,204,292,0,0,0,0
+Ryunohige Anemos,竜の髭【風】,21993,DRG,13,1,5,0,355,101,69,323,292,0,292,0,0,0,0,204
+Failnaught Anemos,フェイルノート・アネモス,21994,BRD,13,1,5,0,355,101,69,323,292,292,0,0,0,0,0,204
+pair of Nagi Anemos,凪【風】,21995,NIN,13,1,5,0,355,101,69,323,292,292,204,0,0,0,0,0
+Caladbolg Anemos,カラドボルグ・アネモス,21996,DRK,13,1,5,0,355,101,69,323,292,0,204,0,0,0,292,0
+Outsider Anemos,アウトサイダー・アネモス,21997,MCH,13,1,5,0,355,101,69,323,292,0,204,0,0,0,0,292
+Aymur Anemos,アイムール・アネモス,21998,WHM,13,1,5,0,355,101,137,323,292,0,0,0,292,204,0,0
+Vanargand Anemos,ヴァナルガンド・アネモス,21999,BLM,13,1,5,0,355,101,137,323,292,0,204,0,292,0,0,0
+copy of <Emphasis>Lemegeton</Emphasis> Anemos,レメゲトン・アネモス,22000,SMN,13,1,5,0,355,101,137,323,292,204,292,0,0,0,0,0
+copy of <Emphasis>Organum</Emphasis> Anemos,オルガノン・アネモス,22001,SCH,13,1,5,0,355,101,137,323,292,204,0,0,0,292,0,0
+Pleiades Anemos,プレアデス・アネモス,22002,AST,13,1,5,0,355,101,137,323,292,204,0,0,292,0,0,0
+Kiku-ichimonji Anemos,菊一文字【風】,22003,SAM,13,1,5,0,355,101,69,323,292,204,0,0,0,0,0,292
+Murgleis Anemos,ミュルグレス・アネモス,22004,RDM,13,1,5,0,355,101,137,323,292,204,0,0,0,0,0,292
+Evalach Anemos,エヴァラック・アネモス,22005,PLD,2,1,0,0,355,0,0,92,83,58,0,0,0,0,83,0
+Anemos chivalrous circlet,シヴァルラスサークレット・アネモス,22231,PLD,3,1,5,0,350,0,0,180,163,163,0,114,0,0,0,0
+Anemos chivalrous surcoat,シヴァルラスサーコート・アネモス,22232,PLD,4,1,5,0,350,0,0,293,265,265,186,0,0,0,0,0
+pair of Anemos chivalrous gauntlets,シヴァルラスガントレット・アネモス,22233,PLD,5,1,5,0,350,0,0,180,163,114,163,0,0,0,0,0
+pair of Anemos chivalrous cuisses,シヴァルラスクウィス・アネモス,22234,PLD,7,1,5,0,350,0,0,293,265,0,0,265,0,0,186,0
+pair of Anemos chivalrous sollerets,シヴァルラスソルレット・アネモス,22235,PLD,8,1,5,0,350,0,0,180,163,114,0,0,0,0,163,0
+Anemos pacifist's circlet,パシフィストサークレット・アネモス,22236,MNK,3,1,5,0,350,0,0,180,163,163,114,0,0,0,0,0
+Anemos pacifist's vest,パシフィストベスト・アネモス,22237,MNK,4,1,5,0,350,0,0,293,265,0,265,186,0,0,0,0
+pair of Anemos pacifist's armguards,パシフィストアームガード・アネモス,22238,MNK,5,1,5,0,350,0,0,180,163,0,114,163,0,0,0,0
+pair of Anemos pacifist's gaskins,パシフィストガスキン・アネモス,22239,MNK,7,1,5,0,350,0,0,293,265,186,0,0,0,0,0,265
+pair of Anemos pacifist's boots,パシフィストブーツ・アネモス,22240,MNK,8,1,5,0,350,0,0,180,163,163,0,114,0,0,0,0
+Anemos brutal visor,ブルータルバイザー・アネモス,22241,WAR,3,1,5,0,350,0,0,180,163,163,0,114,0,0,0,0
+Anemos brutal lorica,ブルータルロリカ・アネモス,22242,WAR,4,1,5,0,350,0,0,293,265,265,186,0,0,0,0,0
+pair of Anemos brutal gauntlets,ブルータルガントレット・アネモス,22243,WAR,5,1,5,0,350,0,0,180,163,114,163,0,0,0,0,0
+pair of Anemos brutal breeches,ブルータルブリーチ・アネモス,22244,WAR,7,1,5,0,350,0,0,293,265,0,0,265,0,0,186,0
+pair of Anemos brutal sollerets,ブルータルソルレット・アネモス,22245,WAR,8,1,5,0,350,0,0,180,163,114,0,0,0,0,163,0
+Anemos trueblood armet,トゥルーブラッドアーメット・アネモス,22246,DRG,3,1,5,0,350,0,0,180,163,163,0,114,0,0,0,0
+suit of Anemos trueblood mail,トゥルーブラッドメイル・アネモス,22247,DRG,4,1,5,0,350,0,0,293,265,0,265,0,0,0,0,186
+pair of Anemos trueblood gauntlets,トゥルーブラッドガントレット・アネモス,22248,DRG,5,1,5,0,350,0,0,180,163,0,0,114,0,0,0,163
+pair of Anemos trueblood brais,トゥルーブラッドブレー・アネモス,22249,DRG,7,1,5,0,350,0,0,293,265,186,0,265,0,0,0,0
+pair of Anemos trueblood greaves,トゥルーブラッドグリーヴ・アネモス,22250,DRG,8,1,5,0,350,0,0,180,163,0,114,0,0,0,0,163
+Anemos storyteller's chapeau,ストーリーテラーシャポー・アネモス,22251,BRD,3,1,5,0,350,0,0,180,163,0,163,114,0,0,0,0
+Anemos storyteller's coat,ストーリーテラーコート・アネモス,22252,BRD,4,1,5,0,350,0,0,293,265,265,0,0,0,0,0,186
+pair of Anemos storyteller's gloves,ストーリーテラーグローブ・アネモス,22253,BRD,5,1,5,0,350,0,0,180,163,114,0,163,0,0,0,0
+pair of Anemos storyteller's bottoms,ストーリーテラーボトム・アネモス,22254,BRD,7,1,5,0,350,0,0,293,265,265,186,0,0,0,0,0
+pair of Anemos storyteller's boots,ストーリーテラーブーツ・アネモス,22255,BRD,8,1,5,0,350,0,0,180,163,114,0,0,0,0,0,163
+Anemos seventh heaven circlet,セブンスヘブンサークレット・アネモス,22256,WHM,3,1,5,0,350,0,0,180,163,0,163,0,114,0,0,0
+Anemos seventh heaven top,セブンスヘブントップス・アネモス,22257,WHM,4,1,5,0,350,0,0,293,265,186,0,0,0,265,0,0
+pair of Anemos seventh heaven fingerless gloves,セブンスヘブン・フィンガレスグローブ・アネモス,22258,WHM,5,1,5,0,350,0,0,180,163,0,0,0,163,114,0,0
+pair of Anemos seventh heaven bottoms,セブンスヘブンボトム・アネモス,22259,WHM,7,1,5,0,350,0,0,293,265,265,0,0,0,186,0,0
+pair of Anemos seventh heaven thighboots,セブンスヘブンサイブーツ・アネモス,22260,WHM,8,1,5,0,350,0,0,180,163,0,163,0,114,0,0,0
+Anemos seventh hell petasos,セブンスヘルペタソス・アネモス,22261,BLM,3,1,5,0,350,0,0,180,163,114,163,0,0,0,0,0
+Anemos seventh hell coat,セブンスヘルコート・アネモス,22262,BLM,4,1,5,0,350,0,0,293,265,265,186,0,0,0,0,0
+pair of Anemos seventh hell gloves,セブンスヘルグローブ・アネモス,22263,BLM,5,1,5,0,350,0,0,180,163,0,0,0,163,0,0,114
+pair of Anemos seventh hell breeches,セブンスヘルブリーチ・アネモス,22264,BLM,7,1,5,0,350,0,0,293,265,186,0,0,0,0,0,265
+pair of Anemos seventh hell thighboots,セブンスヘルサイブーツ・アネモス,22265,BLM,8,1,5,0,350,0,0,180,163,0,114,0,163,0,0,0
+Anemos channeler's horn,チャンネリングホーン・アネモス,22266,SMN,3,1,5,0,350,0,0,180,163,114,163,0,0,0,0,0
+Anemos channeler's vest,チャンネリングベスト・アネモス,22267,SMN,4,1,5,0,350,0,0,293,265,265,186,0,0,0,0,0
+pair of Anemos channeler's armlets,チャンネリングアームレット・アネモス,22268,SMN,5,1,5,0,350,0,0,180,163,0,0,0,163,0,0,114
+pair of Anemos channeler's halfslops,チャンネリングハーフパンツ・アネモス,22269,SMN,7,1,5,0,350,0,0,293,265,186,0,0,0,0,0,265
+pair of Anemos channeler's boots,チャンネリングブーツ・アネモス,22270,SMN,8,1,5,0,350,0,0,180,163,0,114,0,163,0,0,0
+Anemos orator's mortarboard,オラターボード・アネモス,22271,SCH,3,1,5,0,350,0,0,180,163,0,163,0,114,0,0,0
+Anemos orator's coat,オラターコート・アネモス,22272,SCH,4,1,5,0,350,0,0,293,265,186,0,0,0,265,0,0
+pair of Anemos orator's cuffs,オラターカフス・アネモス,22273,SCH,5,1,5,0,350,0,0,180,163,0,0,0,163,114,0,0
+pair of Anemos orator's bottoms,オラターボトム・アネモス,22274,SCH,7,1,5,0,350,0,0,293,265,265,0,0,0,186,0,0
+pair of Anemos orator's shoes,オラターシューズ・アネモス,22275,SCH,8,1,5,0,350,0,0,180,163,0,163,0,114,0,0,0
+Anemos kage-kakushi somen,影隠総面【風】,22276,NIN,3,1,5,0,350,0,0,180,163,0,163,0,0,0,0,114
+suit of Anemos kage-kakushi chainmail,影隠鎖帷子【風】,22277,NIN,4,1,5,0,350,0,0,293,265,265,0,0,0,0,0,186
+pair of Anemos kage-kakushi tekko,影隠手甲【風】,22278,NIN,5,1,5,0,350,0,0,180,163,0,114,0,0,0,0,163
+Anemos kage-kakushi hakama,影隠袴【風】,22279,NIN,7,1,5,0,350,0,0,293,265,186,0,265,0,0,0,0
+pair of Anemos kage-kakushi kyahan,影隠脚絆【風】,22280,NIN,8,1,5,0,350,0,0,180,163,0,0,114,0,0,0,163
+Anemos abyss burgeonet,アビスバーゴネット・アネモス,22281,DRK,3,1,5,0,350,0,0,180,163,163,0,114,0,0,0,0
+Anemos abyss cuirass,アビスキュイラス・アネモス,22282,DRK,4,1,5,0,350,0,0,293,265,265,186,0,0,0,0,0
+pair of Anemos abyss gauntlets,アビスガントレット・アネモス,22283,DRK,5,1,5,0,350,0,0,180,163,114,163,0,0,0,0,0
+Anemos abyss flanchard,アビスフランチャード・アネモス,22284,DRK,7,1,5,0,350,0,0,293,265,0,0,265,0,0,186,0
+pair of Anemos abyss sollerets,アビスソルレット・アネモス,22285,DRK,8,1,5,0,350,0,0,180,163,114,0,0,0,0,163,0
+pair of Anemos gunner's goggles,ガンナーゴーグル・アネモス,22286,MCH,3,1,5,0,350,0,0,180,163,0,163,114,0,0,0,0
+Anemos gunner's coat,ガンナーコート・アネモス,22287,MCH,4,1,5,0,350,0,0,293,265,265,0,0,0,0,0,186
+pair of Anemos gunner's gloves,ガンナーグローブ・アネモス,22288,MCH,5,1,5,0,350,0,0,180,163,114,0,163,0,0,0,0
+pair of Anemos gunner's trousers,ガンナートラウザー・アネモス,22289,MCH,7,1,5,0,350,0,0,293,265,265,186,0,0,0,0,0
+pair of Anemos gunner's thighboots,ガンナーサイブーツ・アネモス,22290,MCH,8,1,5,0,350,0,0,180,163,114,0,0,0,0,0,163
+Anemos constellation turban,コンステレーションターバン・アネモス,22291,AST,3,1,5,0,350,0,0,180,163,0,163,0,114,0,0,0
+Anemos constellation top,コンステレーショントップス・アネモス,22292,AST,4,1,5,0,350,0,0,293,265,186,0,0,0,265,0,0
+pair of Anemos constellation armlets,コンステレーションアームレット・アネモス,22293,AST,5,1,5,0,350,0,0,180,163,0,0,0,163,114,0,0
+pair of Anemos constellation gaskins,コンステレーションガスキン・アネモス,22294,AST,7,1,5,0,350,0,0,293,265,265,0,0,0,186,0,0
+pair of Anemos constellation sandals,コンステレーションサンダル・アネモス,22295,AST,8,1,5,0,350,0,0,180,163,0,163,0,114,0,0,0
+Anemos myochin jingasa,明珍陣笠【風】,22296,SAM,3,1,5,0,350,0,0,180,163,163,114,0,0,0,0,0
+Anemos myochin haori,明珍羽織【風】,22297,SAM,4,1,5,0,350,0,0,293,265,0,265,186,0,0,0,0
+pair of Anemos myochin tekko,明珍手甲【風】,22298,SAM,5,1,5,0,350,0,0,180,163,0,114,163,0,0,0,0
+Anemos myochin hakama,明珍袴【風】,22299,SAM,7,1,5,0,350,0,0,293,265,186,0,0,0,0,0,265
+pair of Anemos myochin geta,明珍下駄【風】,22300,SAM,8,1,5,0,350,0,0,180,163,163,0,114,0,0,0,0
+Anemos duelist's chapeau,デュエルシャポー・アネモス,22301,RDM,3,1,5,0,350,0,0,180,163,114,163,0,0,0,0,0
+Anemos duelist's tabard,デュエルタバード・アネモス,22302,RDM,4,1,5,0,350,0,0,293,265,265,186,0,0,0,0,0
+pair of Anemos duelist's gloves,デュエルグローブ・アネモス,22303,RDM,5,1,5,0,350,0,0,180,163,0,0,0,163,0,0,114
+pair of Anemos duelist's breeches,デュエルブリーチ・アネモス,22304,RDM,7,1,5,0,350,0,0,293,265,186,0,0,0,0,0,265
+pair of Anemos duelist's thighboots,デュエルサイブーツ・アネモス,22305,RDM,8,1,5,0,350,0,0,180,163,0,114,0,163,0,0,0
