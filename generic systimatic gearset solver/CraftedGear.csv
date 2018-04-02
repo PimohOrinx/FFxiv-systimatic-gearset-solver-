@@ -1,0 +1,28 @@
+name,jp name,id number,job,slot,Unique,VI melds,V melds,ilvl,pWD,mWD,main stat,Meld cap,Determination,Critical Hit,Skill Speed,Spell Speed,Piety,Tenacity,Direct Hit Rate
+slothskin belt of fending,メガテリウム・ディフェンダーベルト,21716,GLA MRD PLD WAR DRK,6,0,1,4,350,0,0,135,122,0,86,122,0,0,0,0
+slothskin belt of maiming,メガテリウム・スレイヤーベルト,21722,LNC DRG,6,0,1,4,350,0,0,135,122,122,86,0,0,0,0,0
+slothskin belt of striking,メガテリウム・ストライカーベルト,21728,PGL MNK SAM,6,0,1,4,350,0,0,135,122,0,86,122,0,0,0,0
+slothskin belt of aiming,メガテリウム・レンジャーベルト,21734,ARC BRD MCH,6,0,1,4,350,0,0,135,122,122,0,0,0,0,0,86
+slothskin belt of scouting,メガテリウム・スカウトベルト,21740,ROG NIN,6,0,1,4,350,0,0,135,122,122,0,86,0,0,0,0
+slothskin belt of healing,メガテリウム・ヒーラーベルト,21746,CNJ WHM SCH AST,6,0,1,4,350,0,0,135,122,0,86,0,0,122,0,0
+slothskin belt of casting,メガテリウム・キャスターベルト,21752,THM ACN BLM SMN RDM,6,0,1,4,350,0,0,135,122,86,122,0,0,0,0,0
+silvergrace earring of fending,グレースディフェンダーイヤリング,21753,GLA MRD PLD WAR DRK,9,0,1,4,350,0,0,43,122,122,0,86,0,0,0,0
+silvergrace earring of slaying,グレースアタッカーイヤリング,21754,PGL LNC MNK DRG SAM,9,0,1,4,350,0,0,135,122,86,0,122,0,0,0,0
+silvergrace earring of aiming,グレースレンジャーイヤリング,21755,ARC ROG BRD NIN MCH,9,0,1,4,350,0,0,135,122,0,86,0,0,0,0,122
+silvergrace earring of healing,グレースヒーラーイヤリング,21756,CNJ WHM SCH AST,9,0,1,4,350,0,0,135,122,86,122,0,0,0,0,0
+silvergrace earring of casting,グレースキャスターイヤリング,21757,THM ACN BLM SMN RDM,9,0,1,4,350,0,0,135,122,0,0,0,86,0,0,122
+black willow necklace of fending,ブラックウィロー・ディフェンダーネックレス,21758,GLA MRD PLD WAR DRK,10,0,1,4,350,0,0,43,122,86,0,122,0,0,0,0
+black willow necklace of slaying,ブラックウィロー・アタッカーネックレス,21759,PGL LNC MNK DRG SAM,10,0,1,4,350,0,0,135,122,0,0,86,0,0,0,122
+black willow necklace of aiming,ブラックウィロー・レンジャーネックレス,21760,ARC ROG BRD NIN MCH,10,0,1,4,350,0,0,135,122,0,122,0,0,0,0,86
+black willow necklace of healing,ブラックウィロー・ヒーラーネックレス,21761,CNJ WHM SCH AST,10,0,1,4,350,0,0,135,122,0,0,0,86,122,0,0
+black willow necklace of casting,ブラックウィロー・キャスターネックレス,21762,THM ACN BLM SMN RDM,10,0,1,4,350,0,0,135,122,0,86,0,122,0,0,0
+pair of black willow armillae of fending,ブラックウィロー・ディフェンダーアルミラ,21763,GLA MRD PLD WAR DRK,11,0,1,4,350,0,0,43,122,122,0,0,0,0,86,0
+pair of black willow armillae of slaying,ブラックウィロー・アタッカーアルミラ,21764,PGL LNC MNK DRG SAM,11,0,1,4,350,0,0,135,122,0,122,86,0,0,0,0
+pair of black willow armillae of aiming,ブラックウィロー・レンジャーアルミラ,21765,ARC ROG BRD NIN MCH,11,0,1,4,350,0,0,135,122,86,0,0,0,0,0,122
+pair of black willow armillae of healing,ブラックウィロー・ヒーラーアルミラ,21766,CNJ WHM SCH AST,11,0,1,4,350,0,0,135,122,86,0,0,122,0,0,0
+pair of black willow armillae of casting,ブラックウィロー・キャスターアルミラ,21767,THM ACN BLM SMN RDM,11,0,1,4,350,0,0,135,122,86,0,0,0,0,0,122
+silvergrace ring of fending,グレースディフェンダーリング,21768,GLA MRD PLD WAR DRK,12,0,1,4,350,0,0,43,122,0,122,0,0,0,86,0
+silvergrace ring of slaying,グレースアタッカーリング,21769,PGL LNC MNK DRG SAM,12,0,1,4,350,0,0,135,122,0,86,0,0,0,0,122
+silvergrace ring of aiming,グレースレンジャーリング,21770,ARC ROG BRD NIN MCH,12,0,1,4,350,0,0,135,122,122,0,86,0,0,0,0
+silvergrace ring of healing,グレースヒーラーリング,21771,CNJ WHM SCH AST,12,0,1,4,350,0,0,135,122,0,86,0,0,122,0,0
+silvergrace ring of casting,グレースキャスターリング,21772,THM ACN BLM SMN RDM,12,0,1,4,350,0,0,135,122,86,122,0,0,0,0,0
