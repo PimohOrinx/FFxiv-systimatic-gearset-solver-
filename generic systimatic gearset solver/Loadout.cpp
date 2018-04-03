@@ -13,6 +13,20 @@
 using namespace std;
 void Loadout::Addgear(int job, gear ring1, gear ring2, gear head, gear body, gear hands, gear waist, gear legs, gear feet, gear ear, gear neck, gear brace, gear arm, gear sheild)
 {
+    Head=head;
+    Body=body;
+    Hands=hands;
+    Waist=waist;
+    Legs=legs;
+    Feet=feet;
+    Ear=ear;
+    Neck=neck;
+    Brace=brace;
+    Ring1=ring1;
+    Ring2=ring1;
+    Arm=arm;
+    Sheild=sheild;
+    
     //find main stat
     int jobmod;
     int trait=0;
@@ -23,7 +37,7 @@ void Loadout::Addgear(int job, gear ring1, gear ring2, gear head, gear body, gea
         jobmod=110,trait=48;
     else if(job==2||job==11)
         jobmod=105;
-    else if((job>=3&&job<=7)||job==10||job==12||job==14)
+    else if((job>=3&&job<=8)||job==10||job==12||job==14)
         jobmod=115,trait=48;
     else if(job==13)
         jobmod=112,trait=48;
@@ -55,7 +69,12 @@ void Loadout::Addgear(int job, gear ring1, gear ring2, gear head, gear body, gea
             VI_meld_limits[i][j]=ring1.VI_meld_limits[i][j]+ring2.VI_meld_limits[i][j]+head.VI_meld_limits[i][j]+waist.VI_meld_limits[i][j]+legs.VI_meld_limits[i][j]+feet.VI_meld_limits[i][j]+ear.VI_meld_limits[i][j]+neck.VI_meld_limits[i][j]+brace.VI_meld_limits[i][j]+arm.VI_meld_limits[i][j]+sheild.VI_meld_limits[i][j];
             V_meld_limits[i][j]=ring1.V_meld_limits[i][j]+ring2.V_meld_limits[i][j]+head.V_meld_limits[i][j]+waist.V_meld_limits[i][j]+legs.V_meld_limits[i][j]+feet.V_meld_limits[i][j]+ear.V_meld_limits[i][j]+neck.V_meld_limits[i][j]+brace.V_meld_limits[i][j]+arm.V_meld_limits[i][j]+sheild.V_meld_limits[i][j];
         }
+        if(VI_melds>100)
+        {
+            cout<<"fuck"<<endl;
+        }
     }
+    
 };
 
 int Loadout::unmelded_damage(int brd,int sch, int drg)

@@ -41,13 +41,13 @@ int main(int argc, const char * argv[]) {
     //end of user custimization//
     //grab gear from file
     Gearset gear;
-    if(Savage_gear)
+    if(Savage_gear==1)
         gear.importgear(job, "SavageGear.csv");
-    if(Tome_gear)
+    if(Tome_gear==1)
         gear.importgear(job, "TomeGear.csv");
-    if(Eureka_gear)
+    if(Eureka_gear==1)
         gear.importgear(job, "EurekaGear.csv");
-    if(Crafted_accesories)
+    if(Crafted_accesories==1)
         gear.importgear(job, "CraftedGear.csv");
     
     //make gearsets

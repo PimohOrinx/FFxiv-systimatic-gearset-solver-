@@ -74,7 +74,7 @@ void Gearset::solve(int brd,int sch, int drg)
     {
         for(vector<gear>::iterator it_ring2=ring.begin();it_ring2!=ring.end();it_ring2++)
         {
-            if(it_ring1->gear_ID()!=it_ring1->gear_ID()||it_ring1->gear_unique()!=true)//makes sure that the 2 unique rings of the same type aren't used
+            if(it_ring1->gear_ID()!=it_ring2->gear_ID()||it_ring1->gear_unique()!=true)//makes sure that the 2 unique rings of the same type aren't used
             {
                 for(vector<gear>::iterator it_head=head.begin();it_head!=head.end();it_head++)
                 {
@@ -107,6 +107,7 @@ void Gearset::solve(int brd,int sch, int drg)
                                                             //some way of saving good results
                                                             int damage=tempload.unmelded_damage(brd,sch,drg);
                                                             //if new damage is close to old damage, 10% atm
+                                                            cout << damage<<endl;
                                                             tempload.meld();
                                                             
                                                         }

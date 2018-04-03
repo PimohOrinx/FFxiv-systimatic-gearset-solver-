@@ -7,7 +7,9 @@
 //
 
 #include "gear.hpp"
+#include <iostream>
 #include <string>
+using namespace std;
 
 
 void gear::gearimport(string input)
@@ -19,11 +21,13 @@ void gear::gearimport(string input)
     size_t comma1=input.find(",");
     size_t comma2=0;
     name=input.substr(0,comma1);
+    //getline(input, name, ',');
     comma2=input.find(",",comma1+1);
     
-    jp_name=input.substr(comma1+1,comma2-comma1);
+    jp_name=input.substr(comma1+1,comma2-comma1-1);
+    //jp_name=getline(input,",");
     comma1=comma2;
-    comma2=input.find(",",comma1+1);
+    comma2=input.find(",",comma1+1);//???
     
     ID=stoi(input.substr(comma1+1,comma2-comma1));
     comma1=comma2;
@@ -95,35 +99,35 @@ void gear::gearimport(string input)
     //find allowed melds
     //string jobs
     //0PLD,1MNK,2WAR,3DRG,4BRD,5WHM,6BLM,7SMN,8SCH,9NIN,10MCH,11DRK,12AST,13SAM,14RDM
-    if(jobs.find("PLD")>0)
+    if(jobs.find("PLD")!=string::npos)
         job[0]=true;
-    if(jobs.find("MNk")>0)
+    if(jobs.find("MNk")!=string::npos)
         job[1]=true;
-    if(jobs.find("WAR")>0)
+    if(jobs.find("WAR")!=string::npos)
         job[2]=true;
-    if(jobs.find("DRG")>0)
+    if(jobs.find("DRG")!=string::npos)
         job[3]=true;
-    if(jobs.find("BRD")>0)
+    if(jobs.find("BRD")!=string::npos)
         job[4]=true;
-    if(jobs.find("WHM")>0)
+    if(jobs.find("WHM")!=string::npos)
         job[5]=true;
-    if(jobs.find("BLM")>0)
+    if(jobs.find("BLM")!=string::npos)
         job[6]=true;
-    if(jobs.find("SMN")>0)
+    if(jobs.find("SMN")!=string::npos)
         job[7]=true;
-    if(jobs.find("SCH")>0)
+    if(jobs.find("SCH")!=string::npos)
         job[8]=true;
-    if(jobs.find("NIN")>0)
+    if(jobs.find("NIN")!=string::npos)
         job[9]=true;
-    if(jobs.find("MCH")>0)
+    if(jobs.find("MCH")!=string::npos)
         job[10]=true;
-    if(jobs.find("DRK")>0)
+    if(jobs.find("DRK")!=string::npos)
         job[11]=true;
-    if(jobs.find("AST")>0)
+    if(jobs.find("AST")!=string::npos)
         job[12]=true;
-    if(jobs.find("SAM")>0)
+    if(jobs.find("SAM")!=string::npos)
         job[13]=true;
-    if(jobs.find("RDM")>0)
+    if(jobs.find("RDM")!=string::npos)
         job[14]=true;
     
     
@@ -139,117 +143,68 @@ void gear::gearimport(string input)
 
     if((slot==9||slot==10||slot==11||slot==12) && job[1]==0)
         VI_melds--;
-   
+   //bugged
     for(int i=0;i<5;i++)// finds the most melds of each type the item can use
     {
         int stats=meldcap-SubStats[i];
-        for(int j=VI_melds;j>=0;j--)
+        bool no_escape=true;
+        for(int j=V_melds;j>=0&&no_escape;j--)
         {
-            for(int k=V_melds;k>=0;k--)
+            for(int k=VI_melds;k>=0&&no_escape;k--)
             {
-                if(stats>=j*40+k*12)
+                if(stats>=j*12+k*40-3||(stats>=j*12+k*40-5&&k>0))
                 {
-                    VI_type[i]=j;
-                    V_type[i]=k;
-                }
-                else if(stats>=(j*40+k*12-1))
-                {
-                    if(j==0)
-                    {
-                        V_type_11[i]=1;
-                        if(k>1)
-                            V_type[i]=k-1;
-                    }
-                    else
-                    {
-                        V_type[i]=j;
-                        VI_type_39[i]=1;
-                        if(j>1)
-                            VI_type[i]=j-1;
-                    }
-                }
-                else if(stats>=j*40+k*12-2)
-                {
-                    if(j==0)
-                    {
-                        V_type_10[i]=1;
-                        if(k>1)
-                            V_type[i]=k-1;
-                    }
-                    else
-                    {
-                        V_type[i]=j;
-                        VI_type_38[i]=1;
-                        if(j>1)
-                            VI_type[i]=j-1;
-                    }
-                }
-                else if(stats>=j*40+k*12-3)
-                {
-                    if(j==0)
-                    {
-                        V_type_9[i]=1;
-                        if(k>1)
-                            V_type[i]=k-1;
-                    }
-                    else
-                    {
-                        V_type[i]=j;
-                        VI_type_37[i]=1;
-                        if(j>1)
-                            VI_type[i]=j-1;
-                    }
-                }
-                else if(stats>=j*40+k*12-4)
-                {
-                    if(stats>12)
-                    {
-                        V_type[i]=j;
-                        VI_type_36[i]=1;
-                        if(j>1)
-                            VI_type[i]=j-1;
-                    }
-                }
-                else if(stats>=j*40+k*12-5)
-                {
-                    if(stats>12)
-                    {
-                        V_type[i]=j;
-                        VI_type_35[i]=1;
-                        if(j>1)
-                            VI_type[i]=j-1;
-                    }
+                    if(stats>=j*12+k*40)
+                        VI_type[i]=k,V_type[i]=j,no_escape=false;
+                    else if (k==0&&stats==j*12+k*40-1)
+                        VI_type[i]=k,V_type[i]=max(j-1,0),V_type_11[i]=1,no_escape=false;
+                    else if (k==0&&stats==j*12+k*40-2)
+                        VI_type[i]=k,V_type[i]=max(j-1,0),V_type_10[i]=1,no_escape=false;
+                    else if (k==0&&stats==j*12+k*40-3)
+                        VI_type[i]=k,V_type[i]=max(j-1,0),V_type_9[i]=1,no_escape=false;
+                    else if (stats==j*12+k*40-1)
+                        VI_type[i]=max(k-1,0),VI_type_39[i]=1,V_type[i]=j,no_escape=false;
+                    else if (stats==j*12+k*40-2)
+                        VI_type[i]=max(k-1,0),VI_type_38[i]=1,V_type[i]=j,no_escape=false;
+                    else if (stats==j*12+k*40-3)
+                        VI_type[i]=max(k-1,0),VI_type_37[i]=1,V_type[i]=j,no_escape=false;
+                    else if (stats==j*12+k*40-4)
+                        VI_type[i]=max(k-1,0),VI_type_36[i]=1,V_type[i]=j,no_escape=false;
+                    else if (stats==j*12+k*40-5)
+                        VI_type[i]=max(k-1,0),VI_type_35[i]=1,V_type[i]=j,no_escape=false;
+                    
                 }
             }
         }
-        //no piety V mleds and no piety/ten melds on dps
-        if(0==job[0]||0==job[1]||0==job[11])//if not tank no piety/ten melds
-        {
-            V_type[3]=0;
-            V_type_11[3]=0;
-            V_type_10[3]=0;
-            V_type_9[3]=0;
-        }
-        //if not tank/healer
-        if(0==job[0]||0==job[1]||0==job[11]||0==job[5]||0==job[8]||0==job[14])//if not tank or healer no ten/piety melds
-        {
-            VI_type[3]=0;
-            VI_type_39[3]=0;
-            VI_type_38[3]=0;
-            VI_type_37[3]=0;
-            VI_type_36[3]=0;
-            VI_type_35[3]=0;
-        }
+    }
+    //no piety V mleds and no piety/ten melds on dps
+    if(0==job[0]||0==job[1]||0==job[11])//if not tank no piety/ten melds
+    {
+        V_type[3]=0;
+        V_type_11[3]=0;
+        V_type_10[3]=0;
+        V_type_9[3]=0;
+    }
+    //if not tank/healer
+    if(0==job[0]||0==job[1]||0==job[11]||0==job[5]||0==job[8]||0==job[14])//if not tank or healer no ten/piety melds
+    {
+        VI_type[3]=0;
+        VI_type_39[3]=0;
+        VI_type_38[3]=0;
+        VI_type_37[3]=0;
+        VI_type_36[3]=0;
+        VI_type_35[3]=0;
     }
     
-    for(int j=0;j<5;j++)
+    for(int j=0;j<5;j++)//needs fixing
     {
         for(int k=0;k<5;k++)
         {
-            if (VI_melds>=VI_type[j]+VI_type_39[j]+VI_type_38[j]+VI_type_36[j]+VI_type_35[j]&&VI_melds>=VI_type[k]+VI_type_39[k]+VI_type_38[k]+VI_type_36[k]+VI_type_35[k])
-                VI_meld_limits[j][k]=1;
-            if (V_melds>=V_type[j]+V_type_11[j]+V_type_10[j]+V_type_9[j]&&V_melds>=V_type[k]+V_type_11[k]+V_type_10[k]+V_type_9[k])
-                V_meld_limits[j][k]=1;
+            if (VI_melds>VI_type[j]+VI_type_39[j]+VI_type_38[j]+VI_type_36[j]+VI_type_35[j]&&VI_melds>VI_type[k]+VI_type_39[k]+VI_type_38[k]+VI_type_36[k]+VI_type_35[k])
+                VI_meld_limits[j][k]=min(VI_melds-(VI_type[j]+VI_type_39[j]+VI_type_38[j]+VI_type_36[j]+VI_type_35[j]),VI_melds-(VI_type[k]+VI_type_39[k]+VI_type_38[k]+VI_type_36[k]+VI_type_35[k]));
+            
+            if (V_melds>V_type[j]+V_type_11[j]+V_type_10[j]+V_type_9[j]&&V_melds>V_type[k]+V_type_11[k]+V_type_10[k]+V_type_9[k])
+                V_meld_limits[j][k]=min(V_melds-(V_type[j]+V_type_11[j]+V_type_10[j]+V_type_9[j]),V_melds-(V_type[k]+V_type_11[k]+V_type_10[k]+V_type_9[k]));
         }
     }
     //int VI_meld_limits[5][5]={0};

@@ -55,6 +55,8 @@ public:
     int V_meld_limits[5][5]={0};
     
     void gearimport(string input);
+    
+    
     int gearslot(void);
     bool gearjob(int job_number);
     int gear_ID(void);

@@ -17,19 +17,19 @@ class Loadout
 {
 private:
     int job;
-    gear head;
-    gear body;
-    gear hands;
-    gear waist;
-    gear legs;
-    gear feet;
-    gear ear;
-    gear neck;
-    gear brace;
-    gear ring1;
-    gear ring2;
-    gear arm;
-    gear sheild;
+    gear Head;
+    gear Body;
+    gear Hands;
+    gear Waist;
+    gear Legs;
+    gear Feet;
+    gear Ear;
+    gear Neck;
+    gear Brace;
+    gear Ring1;
+    gear Ring2;
+    gear Arm;
+    gear Sheild;
     
     int MainStat=0;
     int WeaponDamage=0;
